@@ -7,4 +7,5 @@ RUN pip install --user g4f[all]
 FROM base
 COPY --from=builder /root/.local /root/.local
 
+expose 1337
 CMD ["/bin/sh","-c","python3 -m g4f.api.run"]
