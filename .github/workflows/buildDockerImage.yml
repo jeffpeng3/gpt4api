@@ -27,6 +27,7 @@ jobs:
 
       - uses: docker/build-push-action@v5
         with:
+          push: true
           tags: ghcr.io/jeffpeng3/gpt4api
           cache-from: type=gha
           cache-to: type=gha,mode=max
